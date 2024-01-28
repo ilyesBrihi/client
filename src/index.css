@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.btn {
+  @apply border-primary border-solid
+  border-[1px] rounded-lg w-full py-[4px] px-[8px] font-semibold;
+}
+.welcome {
+  clip-path: polygon(0 0, 100% 0, 6% 100%, 0 100%);
+}
+.select {
+  @apply py-[2px] ps-3 border-solid border-primary border-[1px] rounded-md shadow-md w-full focus:outline-none;
+}
+.txt {
+  @apply text-white text-sm;
+}
+.leaflet-container {
+  @apply h-[200px] min-w-[250px] max-w-[700px] sm:min-w-[500px] md:min-w-[650px] lg:min-w-[900px] 2xl:min-w-[1100px] 3xl:min-w-[1300px] rounded-xl;
+}
+.h2 {
+  @apply font-semibold mx-10 mt-2 text-white text-lg;
+}
+
+.button {
+  @apply bg-primary rounded-xl shadow-md text-white py-1 px-[10px] my-1 text-center pb-[6px];
+}
+.buttonwhite {
+  @apply bg-white rounded-xl shadow-md text-primary py-1 px-[10px] my-1 text-center pb-[6px];
+}
+.buttong {
+  @apply bg-green-600 rounded-xl shadow-md text-white py-1 px-[10px] my-1 text-center pb-[6px];
+}
+
+.h1 {
+  @apply font-bold text-[20px];
+}
+
+.form {
+  @apply flex flex-col justify-between p-6 bg-white rounded-xl shadow-md mx-10 my-2;
+}
+
+.card {
+  @apply py-2 px-4 border-primary border-solid border-[1.5px] rounded-md shadow-md text-start;
+}
+.link {
+  @apply px-2 sm:px-4 py-1 no-underline text-primary text-sm sm:text-lg font-semibold capitalize;
+}
+a.active {
+  @apply bg-white text-black;
+}
+.hhh{
+  @apply text-white text-lg font-semibold;
+}
+.hh {
+  @apply text-primary text-lg font-semibold;
+}
+.overlay{
+  @apply bg-black bg-opacity-50 fixed inset-0 z-50;
+}
+.focuss{
+  @apply focus:outline-none;
+}
+.thh{
+  @apply bg-primary text-white font-semibold text-sm py-1 px-2;
+}
